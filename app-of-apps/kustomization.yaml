@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: audio 
+  janus-idp.io/tekton: audio
+  backstage.io/kubernetes-id: audio
+  backstage.io/kubernetes-namespace: rhdh-app 
+  app.kubernetes.io/part-of: audio
+resources: 
+- application-dev.yaml
